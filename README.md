@@ -33,3 +33,20 @@ For example, change the blue and cyan color for tokyonight-day-theme.
       '((blue . "#2e7de9")
         (cyan . "#007197")))
 ```
+### Installing the theme
+
+1. Unzip files of this repo into the `~/.emacs.d/themes/` directory.
+2. Make sure the directory is added to the custom theme load path:
+    ```elisp
+    (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+    ```
+3. Load the `tokyonight-themes.el` file before activating the theme:
+    ```elisp
+    (load-file "~/.emacs.d/themes/tokyonight-themes.el")
+    ```
+4. Activate the theme:
+    ```elisp
+    (load-theme 'tokyonight-moon t)
+    ```
+
+Now the theme should work correctly.
