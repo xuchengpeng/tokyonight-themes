@@ -33,3 +33,19 @@ For example, change the blue and cyan color for tokyonight-day-theme.
       '((blue . "#2e7de9")
         (cyan . "#007197")))
 ```
+
+Basic setup:
+
+1. Get the source:
+
+```bash
+git clone https://github.com/xuchengpeng/tokyonight-themes.git ~/.emacs.d/tokyonight-themes
+```
+
+2. Load the theme in your configuration:
+
+```elisp
+(add-to-list 'load-path "~/.emacs.d/tokyonight-themes")
+(require 'tokyonight-themes)
+(load-theme 'tokyonight-moon :no-confirm)
+```
