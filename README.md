@@ -4,9 +4,7 @@
 
 Tokyo Night theme was firstly published as a plugin for Visual Studio Code, now it has many [other ports](https://github.com/enkia/tokyo-night-vscode-theme#other-ports).
 
-Rawley make a [tokyo-theme.el](https://github.com/rawleyfowler/tokyo-theme.el) for GNU Emacs, but it is unmaintained and has not support any popular packages for GNU Emacs we often use.
-
-So I want to make it for myself, The theme templates were taken from [modus-themes](https://github.com/protesilaos/modus-themes), and the color palettes were taken from [tokyonight.nvim](https://github.com/folke/tokyonight.nvim), these two themes are very popular and awesome with GNU Emacs or [Neovim](https://github.com/neovim/neovim).
+The theme templates adapt from [modus-themes](https://github.com/protesilaos/modus-themes), and the color palettes adapt from [tokyonight.nvim](https://github.com/folke/tokyonight.nvim), these two themes are very popular and awesome with GNU Emacs or [Neovim](https://github.com/neovim/neovim).
 
 This theme has four color palettes, as same sa tokyonight.nvim. I have add support with some popular packages which I often use with GNU Emacs, like Corfu, vertico, orderless, dired, diff-hl, hl-todo, multiple-cursors, symbol-overlay, vundo and so on.
 
@@ -22,9 +20,9 @@ For example, add support for git-gutter-fr package.
     `(git-gutter-fr:modified ((,c :foreground ,yellow)))))
 ```
 
-Evaluate the code with a function after the tokyonight-themes load.
+Evaluate the code with a function after loading tokyonight-themes.
 
-If you want to change the color palettes, we have a option for palette overrides. Customize `tokyonight-<style>-palette-overrides` before you load the tokyonight-themes, style is an choice with storm, moon, night or day.
+If you want to change the color palettes, we have a option for palette overrides. Customize `tokyonight-<style>-palette-overrides` before you load the tokyonight-themes, style is an choice with `storm`, `moon`, `night` or `day`.
 
 For example, change the blue and cyan color for tokyonight-day-theme.
 
