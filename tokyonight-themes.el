@@ -126,7 +126,7 @@
     `(corfu-border ((,c :foreground ,fg :background ,dark5)))
 
     ;; custom (M-x customize)
-    `(custom-button ((,c :background ,dark3 :foreground ,fg :box(:line-width 1 :color ,dark5 :style release-button))))
+    `(custom-button ((,c :background ,dark3 :foreground ,fg :box(:line-width 1 :color ,dark5 :style released-button))))
     `(custom-button-mouse ((,c :inherit (highlight custom-button))))
     `(custom-button-pressed ((,c :inherit (secondary-selection custom-button))))
     `(custom-changed ((,c :background ,dark3)))
@@ -420,28 +420,40 @@
 (defmacro tokyonight-themes-theme (name palette &optional overrides)
   "Bind NAME's color PALETTE. Optional OVERRIDES are appended to PALETTE."
   (declare (indent 0))
-  `(let* ((c '((class color) (min-colors 256)))
-          ,@(mapcar (lambda (cons)
-                     (list (car cons) (cdr cons)))
-                    (append (symbol-value palette) (symbol-value overrides))))
-     (custom-theme-set-faces ',name ,@tokyonight-themes-faces)
-     (custom-theme-set-variables ',name ,@tokyonight-themes-custom-variables)))
+  (let* ((palette-v (symbol-value palette))
+         (overrides-v (symbol-value overrides))
+         (colors (mapcar #'car palette-v)))
+    `(let* ((c '((class color) (min-colors 256)))
+            ,@(mapcar (lambda (color)
+                        (list color
+                              (or (alist-get color overrides-v)
+                                  (alist-get color palette-v))))
+                      colors))
+       (ignore c ,@colors)
+       (custom-theme-set-faces ',name ,@tokyonight-themes-faces)
+       (custom-theme-set-variables ',name ,@tokyonight-themes-custom-variables))))
 
 ;;;; Use theme colors
 
 (defmacro tokyonight-themes-with-colors (&rest body)
   "Evaluate BODY with colors from current palette bound."
   (declare (indent 0))
-  (let* ((theme (or (car (seq-filter (lambda (th)
-                                      (string-prefix-p "tokyonight-" (symbol-name th)))
-                                     custom-enabled-themes))
-                    (user-error "No enabled tokyonight theme could be found"))))
+  (let* ((theme (or (car (seq-filter
+                          (lambda (th)
+                            (string-prefix-p "tokyonight-" (symbol-name th)))
+                          custom-enabled-themes))
+                    (user-error "No enabled tokyonight theme could be found")))
+         (palette-v (symbol-value (intern (format "%s-palette" theme))))
+         (overrides-v (symbol-value (intern (format "%s-palette-overrides" theme))))
+         (colors (mapcar #'car palette-v)))
     `(let* ((c '((class color) (min-colors 256)))
-            ,@(mapcar (lambda (cons)
-                        (list (car cons) (cdr cons)))
-                      (append (symbol-value (intern (format "%s-palette" theme)))
-                              (symbol-value (intern (format "%s-palette-overrides" theme))))))
-      ,@body)))
+            ,@(mapcar (lambda (color)
+                        (list color
+                              (or (alist-get color overrides-v)
+                                  (alist-get color palette-v))))
+                      colors))
+       (ignore c ,@colors)
+       ,@body)))
 
 ;;;; Add themes from package to path
 
