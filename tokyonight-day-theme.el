@@ -18,7 +18,7 @@
     :family 'tokyonight)
 
   (defconst tokyonight-day-palette
-    '((bg-dark . "#e9e9ec")
+    '((bg-dark . "#d0d5e3")
       (bg . "#e1e2e7")
       (bg-hl . "#c4c8da")
       (terminal-black . "#a1a6c5")
