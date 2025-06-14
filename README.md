@@ -6,6 +6,24 @@ Tokyo Night theme was firstly published as a plugin for Visual Studio Code, now 
 
 The theme templates adapt from [modus-themes](https://github.com/protesilaos/modus-themes), and the color palettes adapt from [tokyonight.nvim](https://github.com/folke/tokyonight.nvim), these two themes are very popular and awesome with GNU Emacs or [Neovim](https://github.com/neovim/neovim).
 
+## Install
+
+1. Clone the source:
+
+```bash
+git clone https://github.com/xuchengpeng/tokyonight-themes.git ~/.emacs.d/tokyonight-themes
+```
+
+2. Load the theme in your configuration:
+
+```elisp
+(add-to-list 'load-path "~/.emacs.d/tokyonight-themes")
+(require 'tokyonight-themes)
+(load-theme 'tokyonight-moon :no-confirm)  ; Or tokyonight-day, tokyonight-storm, tokyonight-night
+```
+
+## Customize
+
 This theme has four color palettes, as same sa tokyonight.nvim. I have add support with some popular packages which I often use with GNU Emacs, like Corfu, vertico, orderless, dired, diff-hl, hl-todo, multiple-cursors, symbol-overlay, vundo and so on.
 
 If you like it, clone the theme, and add support for your plugins into the theme code. Also, you can use theme colors in code with `tokyonight-themes-with-colors`.
@@ -32,18 +50,3 @@ For example, change the blue and cyan color for tokyonight-day-theme.
         (cyan . "#007197")))
 ```
 
-Basic setup:
-
-1. Get the source:
-
-```bash
-git clone https://github.com/xuchengpeng/tokyonight-themes.git ~/.emacs.d/tokyonight-themes
-```
-
-2. Load the theme in your configuration:
-
-```elisp
-(add-to-list 'load-path "~/.emacs.d/tokyonight-themes")
-(require 'tokyonight-themes)
-(load-theme 'tokyonight-moon :no-confirm)
-```
