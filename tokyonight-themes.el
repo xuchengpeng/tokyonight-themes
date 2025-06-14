@@ -32,7 +32,7 @@
     `(vertical-border ((,c :foreground ,fg-gutter)))
     `(tooltip ((,c :background ,bg-hl :foreground ,fg)))
     `(highlight ((,c :background ,bg-hl :foreground ,fg)))
-    `(error ((,c :inherit bold :foreground ,red)))
+    `(error ((,c :inherit bold :foreground ,red1)))
     `(warning ((,c :inherit bold :foreground ,yellow)))
     `(success ((,c :inherit bold :foreground ,cyan)))
 
@@ -49,7 +49,7 @@
     `(font-lock-keyword-face ((,c :foreground ,magenta)))
     `(font-lock-negation-char-face ((,c :inherit error)))
     `(font-lock-number-face ((,c :foreground ,orange)))
-    `(font-lock-operator-face ((,c :foreground ,magenta)))
+    `(font-lock-operator-face ((,c :foreground ,blue5)))
     `(font-lock-preprocessor-face ((,c :foreground ,red1)))
     `(font-lock-property-name-face ((,c :foreground ,cyan)))
     `(font-lock-punctuation-face ((,c :foreground ,fg)))
