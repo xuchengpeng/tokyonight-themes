@@ -186,6 +186,20 @@
     `(eldoc-box-body ((,c :inherit tooltip)))
     `(eldoc-box-border ((,c :foreground ,fg :background ,dark5)))
 
+    `(elfeed-log-date-face ((,c :inherit elfeed-search-date-face)))
+    `(elfeed-log-debug-level-face ((,c :inherit elfeed-search-filter-face)))
+    `(elfeed-log-error-level-face ((,c :inherit error)))
+    `(elfeed-log-info-level-face ((,c :inherit success)))
+    `(elfeed-log-warn-level-face ((,c :inherit warning)))
+    `(elfeed-search-date-face ((,c :foreground ,cyan)))
+    `(elfeed-search-feed-face ((,c :foreground ,magenta)))
+    `(elfeed-search-filter-face ((,c :inherit bold)))
+    `(elfeed-search-last-update-face ((,c :inherit bold :foreground ,cyan)))
+    `(elfeed-search-tag-face ((,c :foreground ,blue)))
+    `(elfeed-search-title-face ((,c :foreground ,fg-dark)))
+    `(elfeed-search-unread-count-face (( )))
+    `(elfeed-search-unread-title-face ((,c :inherit bold :foreground ,fg)))
+
     ;; eshell
     `(eshell-prompt ((,c :foreground ,magenta :weight bold)))
     `(eshell-ls-archive ((,c :foreground ,red)))
