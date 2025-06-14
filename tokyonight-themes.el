@@ -15,7 +15,7 @@
     `(bold-italic ((,c :inherit (bold italic))))
     `(underline ((,c :underline t)))
     `(cursor ((,c :background ,fg)))
-    `(fringe ((,c :foreground ,fg-dark :background ,bg-dark)))
+    `(fringe ((,c :background ,bg-dark :foreground ,fg)))
     `(menu ((,c :background ,bg-dark :foreground ,fg)))
     `(scroll-bar ((,c :background ,bg-dark :foreground ,fg-dark)))
     `(tool-bar ((,c :background ,bg-dark :foreground ,fg)))
@@ -31,10 +31,10 @@
     `(border ((,c :background ,bg :foreground ,fg-gutter)))
     `(vertical-border ((,c :foreground ,fg-gutter)))
     `(tooltip ((,c :background ,bg-hl :foreground ,fg)))
-    `(highlight ((,c :background ,bg-hl)))
-    `(error ((,c :foreground ,red)))
-    `(warning ((,c :foreground ,orange)))
-    `(success ((,c :foreground ,green)))
+    `(highlight ((,c :background ,bg-hl :foreground ,fg)))
+    `(error ((,c :inherit bold :foreground ,red)))
+    `(warning ((,c :inherit bold :foreground ,orange)))
+    `(success ((,c :inherit bold :foreground ,green)))
 
     ;; font-lock
     `(font-lock-bracket-face ((,c :foreground ,blue1)))
@@ -262,6 +262,8 @@
     `(mode-line-emphasis ((,c :foreground ,blue)))
     `(mode-line-highlight ((,c :foreground ,bg :background ,blue :box nil)))
     `(header-line ((,c :inherit mode-line)))
+    `(header-line-active ((,c :inherit mode-line-active)))
+    `(header-line-inactive ((,c :inherit mode-line-inactive)))
     `(header-line-highlight ((,c :inherit mode-line-highlight)))
 
     ;; multiple-cursors
