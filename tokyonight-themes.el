@@ -274,10 +274,10 @@
     `(message-separator ((,c :background ,dark3)))
 
     ;; mode-line / header-line
-    `(mode-line ((,c :foreground ,fg-dark :background ,bg-dark :weight normal :box (:line-width 1 :color ,bg-dark))))
+    `(mode-line ((,c :foreground ,fg-dark :background ,bg-dark :box (:line-width 1 :color ,bg-dark))))
     `(mode-line-buffer-id ((,c :inherit bold)))
     `(mode-line-active ((,c :inherit mode-line)))
-    `(mode-line-inactive ((,c :foreground ,fg-gutter :background ,bg-dark :weight normal :box (:line-width 1 :color ,bg-dark))))
+    `(mode-line-inactive ((,c :foreground ,fg-gutter :background ,bg-dark :box (:line-width 1 :color ,bg-dark))))
     `(mode-line-emphasis ((,c :inherit bold :foreground ,blue)))
     `(mode-line-highlight ((,c :foreground ,fg :background ,bg-hl :box ,fg)))
     `(header-line ((,c :inherit mode-line)))
