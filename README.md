@@ -2,7 +2,7 @@
 
 > A clean dark Visual Studio Code theme that celebrates the lights of Downtown [Tokyo at night](https://www.google.com/search?q=tokyo+night&newwindow=1&sxsrf=ACYBGNRiOGCstG_Xohb8CgG5UGwBRpMIQg:1571032079139&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiayIfIhpvlAhUGmuAKHbfRDaIQ_AUIEigB&biw=1280&bih=666&dpr=2).
 
-Tokyo Night theme was firstly published as a plugin for Visual Studio Code, now it has many [other ports](https://github.com/enkia/tokyo-night-vscode-theme#other-ports).
+Tokyo Night theme was firstly published as a plugin for Visual Studio Code, now it has many [other ports](https://github.com/tokyo-night/tokyo-night-vscode-theme#other-ports).
 
 The theme templates adapt from [modus-themes](https://github.com/protesilaos/modus-themes), and the color palettes adapt from [tokyonight.nvim](https://github.com/folke/tokyonight.nvim), these two themes are very popular and awesome with GNU Emacs or [Neovim](https://github.com/neovim/neovim).
 
