@@ -46,7 +46,6 @@
     `(font-lock-doc-face ((,c :foreground ,green2)))
     `(font-lock-doc-markup-face ((,c :foreground ,magenta)))
     `(font-lock-function-name-face ((,c :foreground ,blue)))
-    `(font-lock-function-call-face ((,c :foreground ,magenta)))
     `(font-lock-keyword-face ((,c :foreground ,magenta)))
     `(font-lock-negation-char-face ((,c :inherit error)))
     `(font-lock-number-face ((,c :foreground ,orange)))
@@ -58,8 +57,7 @@
     `(font-lock-regexp-grouping-construct ((,c :foreground ,magenta)))
     `(font-lock-string-face ((,c :foreground ,green)))
     `(font-lock-type-face ((,c :foreground ,blue1)))
-    `(font-lock-variable-name-face ((,c :foreground ,yellow)))
-    `(font-lock-variable-use-face ((,c :foreground ,fg)))
+    `(font-lock-variable-name-face ((,c :foreground ,blue2)))
     `(font-lock-warning-face ((,c :foreground ,yellow)))
 
     ;; ansi-color
