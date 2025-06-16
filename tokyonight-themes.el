@@ -23,7 +23,7 @@
     `(link ((,c :inherit button)))
     `(link-visited ((,c :background ,bg :foreground ,magenta :underline ,magenta)))
     `(match ((,c :foreground ,blue :background ,bg :inverse-video t)))
-    `(shadow ((,c :foreground ,dark5)))
+    `(shadow ((,c :foreground ,fg-dark)))
     `(minibuffer-prompt ((,c :foreground ,magenta :background unspecified)))
     `(region ((,c :background ,dark3 :foreground ,fg :extend t)))
     `(secondary-selection ((,c :background ,bg-hl :foreground unspecified)))
@@ -253,8 +253,8 @@
     `(lazy-highlight ((,c :foreground ,cyan :background ,bg :inverse-video t)))
 
     ;; line-number
-    `(line-number ((,c :inherit default :background ,bg-dark :foreground ,fg-dark)))
-    `(line-number-current-line ((,c :inherit (bold line-number) :background ,fg-gutter :foreground ,fg)))
+    `(line-number ((,c :inherit default :foreground ,fg-dark)))
+    `(line-number-current-line ((,c :inherit (bold line-number) :foreground ,fg)))
     `(line-number-major-tick ((,c :inherit line-number :foreground ,red)))
     `(line-number-minor-tick ((,c :inherit line-number :foreground ,fg-dark)))
 
