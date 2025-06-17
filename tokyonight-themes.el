@@ -35,8 +35,8 @@
     `(error ((,c :inherit bold :foreground ,red1)))
     `(warning ((,c :inherit bold :foreground ,yellow)))
     `(success ((,c :inherit bold :foreground ,cyan)))
-    `(help-argument-name ((,c :inherit italic :foreground ,blue2)))
-    `(help-key-binding ((,c :inherit bold :foreground ,purple)))
+    `(help-argument-name ((,c :inherit italic :foreground ,cyan)))
+    `(help-key-binding ((,c :inherit bold :foreground ,blue)))
 
     ;; font-lock
     `(font-lock-bracket-face ((,c :foreground ,fg)))
@@ -83,7 +83,7 @@
 
     ;; ace-window
     `(aw-background-face ((,c :foreground "gray50")))
-    `(aw-key-face ((,c :inherit font-lock-builtin-face)))
+    `(aw-key-face ((,c :inherit bold :foreground ,blue)))
     `(aw-leading-char-face ((,c :inherit bold :height 1.5 :foreground ,red)))
     `(aw-minibuffer-leading-char-face ((,c :inherit aw-key-face)))
     `(aw-mode-line-face ((,c :inherit bold)))
@@ -381,13 +381,13 @@
 
     ;; which-key
     `(which-key-command-description-face ((,c :foreground ,fg)))
-    `(which-key-group-description-face ((,c :foreground ,cyan)))
+    `(which-key-group-description-face ((,c :foreground ,purple)))
     `(which-key-highlighted-command-face ((,c :inherit warning :underline t)))
-    `(which-key-key-face ((,c :foreground ,blue1 :weight bold)))
+    `(which-key-key-face ((,c :inherit bold :foreground ,blue)))
     `(which-key-local-map-description-face ((,c :foreground ,fg)))
     `(which-key-note-face ((,c :inherit shadow)))
     `(which-key-separator-face ((,c :inherit shadow)))
-    `(which-key-special-key-face ((,c :inherit error :weight bold)))
+    `(which-key-special-key-face ((,c :inherit error)))
 
     ;; whitespace-mode
     `(whitespace-big-indent ((,c :background ,red1)))
