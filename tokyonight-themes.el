@@ -24,7 +24,7 @@
     `(link-visited ((,c :background ,bg :foreground ,magenta :underline ,magenta)))
     `(match ((,c :foreground ,blue :background ,bg :inverse-video t)))
     `(shadow ((,c :foreground ,fg-dark)))
-    `(minibuffer-prompt ((,c :foreground ,magenta :background unspecified)))
+    `(minibuffer-prompt ((,c :foreground ,purple :background unspecified)))
     `(region ((,c :background ,dark3 :foreground ,fg :extend t)))
     `(secondary-selection ((,c :background ,bg-hl :foreground unspecified)))
     `(trailing-whitespace ((,c :foreground ,fg :background ,red1)))
@@ -209,7 +209,7 @@
     `(elfeed-search-unread-title-face ((,c :inherit bold :foreground ,fg)))
 
     ;; eshell
-    `(eshell-prompt ((,c :foreground ,magenta :weight bold)))
+    `(eshell-prompt ((,c :foreground ,purple :weight bold)))
     `(eshell-ls-archive ((,c :foreground ,red)))
     `(eshell-ls-backup ((,c :inherit font-lock-comment-face)))
     `(eshell-ls-clutter ((,c :inherit font-lock-comment-face)))
