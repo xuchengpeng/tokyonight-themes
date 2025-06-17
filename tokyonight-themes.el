@@ -35,6 +35,8 @@
     `(error ((,c :inherit bold :foreground ,red1)))
     `(warning ((,c :inherit bold :foreground ,yellow)))
     `(success ((,c :inherit bold :foreground ,cyan)))
+    `(help-argument-name ((,c :inherit italic :foreground ,blue2)))
+    `(help-key-binding ((,c :inherit bold :foreground ,purple)))
 
     ;; font-lock
     `(font-lock-bracket-face ((,c :foreground ,fg)))
@@ -191,6 +193,7 @@
     `(eldoc-box-body ((,c :inherit tooltip)))
     `(eldoc-box-border ((,c :foreground ,fg :background ,dark5)))
 
+    ;; elfeed
     `(elfeed-log-date-face ((,c :inherit elfeed-search-date-face)))
     `(elfeed-log-debug-level-face ((,c :inherit elfeed-search-filter-face)))
     `(elfeed-log-error-level-face ((,c :inherit error)))
