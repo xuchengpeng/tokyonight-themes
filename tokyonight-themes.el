@@ -133,10 +133,10 @@
     `(corfu-border ((,c :foreground ,fg :background ,dark5)))
 
     ;; custom (M-x customize)
-    `(custom-button ((,c :background ,dark3 :foreground ,fg :box(:line-width 1 :color ,dark5 :style released-button))))
+    `(custom-button ((,c :background ,bg-dark :foreground ,fg-dark :box(:line-width 1 :color ,fg-dark :style released-button))))
     `(custom-button-mouse ((,c :inherit (highlight custom-button))))
     `(custom-button-pressed ((,c :inherit (secondary-selection custom-button))))
-    `(custom-changed ((,c :background ,dark3)))
+    `(custom-changed ((,c :background ,orange)))
     `(custom-comment ((,c :inherit shadow)))
     `(custom-comment-tag ((,c :inherit (bold shadow))))
     `(custom-invalid ((,c :inherit error :strike-through t)))
