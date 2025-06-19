@@ -350,8 +350,8 @@
 
     ;; tab-bar
     `(tab-bar ((,c :foreground ,fg-dark :background ,bg-dark)))
-    `(tab-bar-tab ((,c :foreground ,fg :background ,bg)))
-    `(tab-bar-tab-group-current ((,c :foreground ,fg :background ,bg)))
+    `(tab-bar-tab ((,c :inherit bold :foreground ,fg :background ,bg)))
+    `(tab-bar-tab-group-current ((,c :inherit bold :foreground ,fg :background ,bg)))
     `(tab-bar-tab-group-inactive ((,c :foreground ,fg-dark :background ,bg-dark)))
     `(tab-bar-tab-highlight ((,c :inherit highlight)))
     `(tab-bar-tab-inactive ((,c :foreground ,fg-dark :background ,bg-dark)))
@@ -362,7 +362,7 @@
     `(tab-line-close-highlight ((,c :foreground ,red)))
     `(tab-line-highlight ((,c :inherit highlight)))
     `(tab-line-tab ((,c :foreground ,fg :background ,bg)))
-    `(tab-line-tab-current ((,c :foreground ,fg :background ,bg)))
+    `(tab-line-tab-current ((,c :inherit bold :foreground ,fg :background ,bg)))
     `(tab-line-tab-inactive ((,c :foreground ,fg-dark :background ,bg-dark)))
     `(tab-line-tab-inactive-alternate ((,c :inherit tab-line-tab-inactive)))
     `(tab-line-tab-modified ((,c :foreground ,orange)))
