@@ -200,7 +200,7 @@
     `(elfeed-log-info-level-face ((,c :inherit success)))
     `(elfeed-log-warn-level-face ((,c :inherit warning)))
     `(elfeed-search-date-face ((,c :foreground ,cyan)))
-    `(elfeed-search-feed-face ((,c :foreground ,magenta)))
+    `(elfeed-search-feed-face ((,c :foreground ,purple)))
     `(elfeed-search-filter-face ((,c :inherit bold)))
     `(elfeed-search-last-update-face ((,c :inherit bold :foreground ,cyan)))
     `(elfeed-search-tag-face ((,c :foreground ,blue)))
