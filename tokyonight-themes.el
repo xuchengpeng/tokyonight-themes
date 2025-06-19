@@ -189,10 +189,6 @@
     `(dired-symlink ((,c :foreground ,cyan :background ,bg :underline ,cyan)))
     `(dired-warning ((,c :inherit warning)))
 
-    ;; eldoc-box
-    `(eldoc-box-body ((,c :inherit tooltip)))
-    `(eldoc-box-border ((,c :foreground ,fg :background ,dark5)))
-
     ;; elfeed
     `(elfeed-log-date-face ((,c :inherit elfeed-search-date-face)))
     `(elfeed-log-debug-level-face ((,c :inherit elfeed-search-filter-face)))
@@ -370,17 +366,6 @@
     `(speedbar-selected-face ((,c :foreground ,cyan :weight bold :inverse-video t)))
     `(speedbar-separator-face ((,c :background ,dark3 :foreground ,fg)))
     `(speedbar-tag-face ((,c :foreground ,magenta2)))
-
-    ;; symbol-overlay
-    `(symbol-overlay-default-face ((,c :background ,blue7)))
-    `(symbol-overlay-face-1 ((,c :background ,blue :foreground "black")))
-    `(symbol-overlay-face-2 ((,c :background ,magenta :foreground "black")))
-    `(symbol-overlay-face-3 ((,c :background ,yellow :foreground "black")))
-    `(symbol-overlay-face-4 ((,c :background ,magenta2 :foreground "black")))
-    `(symbol-overlay-face-5 ((,c :background ,red :foreground "black")))
-    `(symbol-overlay-face-6 ((,c :background ,orange :foreground "black")))
-    `(symbol-overlay-face-7 ((,c :background ,green :foreground "black")))
-    `(symbol-overlay-face-8 ((,c :background ,cyan :foreground "black")))
 
     ;; tab-bar
     `(tab-bar ((,c :background ,bg-dark)))
