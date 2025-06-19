@@ -358,8 +358,8 @@
     `(tab-bar-tab-ungrouped ((,c :inherit tab-bar-tab-inactive)))
 
     ;; tab-line
-    `(tab-line ((,c :foreground ,fg-dark :background ,bg-dark)))
-    `(tab-line-close-highlight ((,c :foreground ,red)))
+    `(tab-line ((,c :foreground ,fg-dark :background ,bg-dark :height 0.95)))
+    `(tab-line-close-highlight ((,c :foreground ,red1)))
     `(tab-line-highlight ((,c :inherit highlight)))
     `(tab-line-tab ((,c :foreground ,fg :background ,bg)))
     `(tab-line-tab-current ((,c :inherit bold :foreground ,fg :background ,bg)))
