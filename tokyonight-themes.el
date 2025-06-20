@@ -206,7 +206,7 @@
 
     ;; eshell
     `(eshell-prompt ((,c :foreground ,purple :weight bold)))
-    `(eshell-ls-archive ((,c :foreground ,red)))
+    `(eshell-ls-archive ((,c :foreground ,red1)))
     `(eshell-ls-backup ((,c :inherit font-lock-comment-face)))
     `(eshell-ls-clutter ((,c :inherit font-lock-comment-face)))
     `(eshell-ls-directory ((,c :foreground ,blue)))
