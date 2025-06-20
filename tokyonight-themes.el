@@ -111,14 +111,14 @@
     `(holiday ((,c :foreground ,red1)))
 
     ;; compilation
-    `(compilation-info ((,c :foreground ,green :weight bold)))
-    `(compilation-warning ((,c :foreground ,orange :weight bold)))
-    `(compilation-error ((,c :foreground ,red :weight bold)))
+    `(compilation-info ((,c :inherit bold :foreground ,cyan)))
+    `(compilation-warning ((,c :inherit bold :foreground ,yellow)))
+    `(compilation-error ((,c :inherit bold :foreground ,red1)))
     `(compilation-line-number ((,c :inherit shadow)))
     `(compilation-column-number ((,c :inherit compilation-line-number)))
-    `(compilation-mode-line-exit ((,c :foreground ,green :weight bold)))
-    `(compilation-mode-line-fail ((,c :foreground ,red :weight bold)))
-    `(compilation-mode-line-run ((,c :foreground ,orange :weight bold)))
+    `(compilation-mode-line-exit ((,c :inherit bold)))
+    `(compilation-mode-line-fail ((,c :inherit bold :foreground ,red1)))
+    `(compilation-mode-line-run ((,c :inherit bold :foreground ,yellow)))
 
     ;; completions
     `(completions-annotations ((,c :foreground ,green2 :background unspecified :slant italic)))
