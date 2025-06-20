@@ -36,7 +36,7 @@
     `(error ((,c :inherit bold :foreground ,red1)))
     `(warning ((,c :inherit bold :foreground ,yellow)))
     `(success ((,c :inherit bold :foreground ,cyan)))
-    `(help-argument-name ((,c :inherit italic :foreground ,cyan)))
+    `(help-argument-name ((,c :inherit italic :foreground ,yellow)))
     `(help-key-binding ((,c :inherit bold :foreground ,blue)))
 
     ;; font-lock
