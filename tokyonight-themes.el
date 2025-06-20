@@ -28,8 +28,9 @@
     `(region ((,c :background ,dark3 :foreground ,fg :extend t)))
     `(secondary-selection ((,c :background ,bg-hl :foreground unspecified)))
     `(trailing-whitespace ((,c :foreground ,fg :background ,red1)))
-    `(border ((,c :background ,bg :foreground ,fg-gutter)))
-    `(vertical-border ((,c :foreground ,fg-gutter)))
+    `(border ((,c :background ,dark3 :foreground ,fg)))
+    `(vertical-border ((,c :foreground ,dark3)))
+    `(child-frame-border ((,c :background ,dark3)))
     `(tooltip ((,c :background ,bg-hl :foreground ,fg)))
     `(highlight ((,c :background ,bg-hl :foreground ,fg)))
     `(error ((,c :inherit bold :foreground ,red1)))
@@ -129,8 +130,8 @@
     ;; corfu
     `(corfu-default ((,c :foreground ,fg :background ,bg-dark)))
     `(corfu-current ((,c :foreground ,fg :background ,bg-hl :weight bold)))
-    `(corfu-bar ((,c :foreground ,fg :background ,dark3)))
-    `(corfu-border ((,c :foreground ,fg :background ,dark5)))
+    `(corfu-bar ((,c :background ,fg-dark)))
+    `(corfu-border ((,c :background ,dark3)))
 
     ;; custom (M-x customize)
     `(custom-button ((,c :background ,bg-dark :foreground ,fg-dark :box(:line-width 1 :color ,fg-dark :style released-button))))
