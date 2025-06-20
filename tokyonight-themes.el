@@ -21,7 +21,7 @@
     `(tool-bar ((,c :background ,bg-dark :foreground ,fg)))
     `(button ((,c :background unspecified :foreground ,blue1 :underline ,blue1)))
     `(link ((,c :inherit button)))
-    `(link-visited ((,c :background ,bg :foreground ,magenta :underline ,magenta)))
+    `(link-visited ((,c :background ,bg :foreground ,purple :underline ,purple)))
     `(match ((,c :foreground ,blue :background ,bg :inverse-video t)))
     `(shadow ((,c :foreground ,fg-dark)))
     `(minibuffer-prompt ((,c :foreground ,purple :background unspecified)))
