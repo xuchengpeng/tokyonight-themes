@@ -263,9 +263,6 @@
     ;; hl-line
     `(hl-line ((,c :background ,bg-hl :extend t)))
 
-    ;; hl-todo
-    `(hl-todo ((,c :inherit (bold font-lock-comment-face) :foreground ,red)))
-
     ;; icomplete
     `(icomplete-first-match ((,c :foreground ,blue1 :weight bold)))
     `(icomplete-selected-match ((,c :background ,bg-hl :weight bold)))
