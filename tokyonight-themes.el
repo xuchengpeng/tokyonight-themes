@@ -52,14 +52,14 @@
     `(font-lock-negation-char-face ((,c :inherit error)))
     `(font-lock-number-face ((,c :foreground ,orange)))
     `(font-lock-operator-face ((,c :foreground ,blue5)))
-    `(font-lock-preprocessor-face ((,c :foreground ,red1)))
-    `(font-lock-property-name-face ((,c :foreground ,cyan)))
+    `(font-lock-preprocessor-face ((,c :foreground ,cyan)))
+    `(font-lock-property-name-face ((,c :foreground ,yellow)))
     `(font-lock-punctuation-face ((,c :foreground ,fg)))
     `(font-lock-regexp-grouping-backslash ((,c :foreground ,yellow)))
     `(font-lock-regexp-grouping-construct ((,c :foreground ,magenta)))
     `(font-lock-string-face ((,c :foreground ,green)))
     `(font-lock-type-face ((,c :foreground ,blue1)))
-    `(font-lock-variable-name-face ((,c :foreground ,blue2)))
+    `(font-lock-variable-name-face ((,c :foreground ,yellow)))
     `(font-lock-warning-face ((,c :foreground ,yellow)))
 
     ;; ansi-color
