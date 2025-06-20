@@ -179,13 +179,13 @@
     `(diff-hl-reverted-hunk-highlight ((,c :foreground ,bg :background ,fg)))
 
     ;; dired
-    `(dired-broken-symlink ((,c :inherit button :foreground ,red)))
-    `(dired-directory ((,c :foreground ,blue1)))
-    `(dired-flagged ((,c :foreground ,red :weight bold :inverse-video t)))
+    `(dired-broken-symlink ((,c :inherit button :foreground ,red1)))
+    `(dired-directory ((,c :foreground ,blue)))
+    `(dired-flagged ((,c :inherit bold :foreground ,cyan :inverse-video t)))
     `(dired-header ((,c :inherit bold)))
     `(dired-ignored ((,c :inherit shadow)))
     `(dired-mark ((,c :inherit bold)))
-    `(dired-marked ((,c :foreground ,cyan :weight bold :inverse-video t)))
+    `(dired-marked ((,c :inherit bold :foreground ,cyan :inverse-video t)))
     `(dired-perm-write ((,c :inherit shadow)))
     `(dired-symlink ((,c :foreground ,cyan :background ,bg :underline ,cyan)))
     `(dired-warning ((,c :inherit warning)))
