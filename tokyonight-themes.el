@@ -42,8 +42,8 @@
     ;; font-lock
     `(font-lock-bracket-face ((,c :foreground ,fg)))
     `(font-lock-builtin-face ((,c :foreground ,purple)))
-    `(font-lock-comment-face ((,c :foreground ,comment)))
-    `(font-lock-comment-delimiter-face ((,c :foreground ,comment)))
+    `(font-lock-comment-face ((,c :inherit italic :foreground ,comment)))
+    `(font-lock-comment-delimiter-face ((,c :inherit font-lock-comment-face)))
     `(font-lock-constant-face ((,c :foreground ,orange)))
     `(font-lock-delimiter-face ((,c :foreground ,fg)))
     `(font-lock-doc-face ((,c :foreground ,green2)))
