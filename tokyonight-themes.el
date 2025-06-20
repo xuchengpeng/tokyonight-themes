@@ -440,27 +440,6 @@
   '(
     ;;;; ansi-colors
     `(ansi-color-names-vector [,bg ,red ,green ,yellow ,blue ,magenta ,cyan ,fg])
-
-    ;;;; hl-todo
-    `(hl-todo-keyword-faces
-      '(("HOLD" . ,yellow)
-        ("TODO" . ,red)
-        ("NEXT" . ,fg-dark)
-        ("THEM" . ,fg-dark)
-        ("PROG" . ,cyan)
-        ("OKAY" . ,cyan)
-        ("DONT" . ,yellow)
-        ("FAIL" . ,red)
-        ("BUG" . ,red)
-        ("DONE" . ,cyan)
-        ("NOTE" . ,yellow)
-        ("KLUDGE" . ,yellow)
-        ("HACK" . ,yellow)
-        ("TEMP" . ,yellow)
-        ("FIXME" . ,red)
-        ("XXX+" . ,red)
-        ("REVIEW" . ,cyan)
-        ("DEPRECATED" . ,cyan)))
   )
   "Custom variables for `tokyonight-themes-theme'.")
 
