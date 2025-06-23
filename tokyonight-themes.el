@@ -31,7 +31,7 @@
     `(border ((,c :background ,dark3 :foreground ,fg)))
     `(vertical-border ((,c :foreground ,dark3)))
     `(child-frame-border ((,c :background ,dark3)))
-    `(tooltip ((,c :background ,bg-hl :foreground ,fg)))
+    `(tooltip ((,c :background ,bg-dark :foreground ,fg)))
     `(highlight ((,c :background ,bg-hl :foreground ,fg)))
     `(error ((,c :inherit bold :foreground ,red1)))
     `(warning ((,c :inherit bold :foreground ,yellow)))
