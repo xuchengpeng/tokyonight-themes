@@ -15,7 +15,7 @@
     `(bold-italic ((,c :inherit (bold italic))))
     `(underline ((,c :underline t)))
     `(cursor ((,c :background ,fg)))
-    `(fringe ((,c :background ,bg-dark :foreground ,fg)))
+    `(fringe ((,c :background unspecified :foreground ,fg)))
     `(menu ((,c :background ,bg-dark :foreground ,fg)))
     `(scroll-bar ((,c :background ,bg-dark :foreground ,fg-dark)))
     `(tool-bar ((,c :background ,bg-dark :foreground ,fg)))
@@ -305,10 +305,10 @@
     `(message-separator ((,c :background ,dark3)))
 
     ;; mode-line / header-line
-    `(mode-line ((,c :foreground ,fg :background ,bg-dark1 :box (:line-width 1 :color ,bg-dark1))))
+    `(mode-line ((,c :foreground ,fg :background ,bg-dark1 :box ,bg-dark1)))
     `(mode-line-buffer-id ((,c :inherit bold)))
     `(mode-line-active ((,c :inherit mode-line)))
-    `(mode-line-inactive ((,c :foreground ,fg-dark :background ,bg-dark :box (:line-width 1 :color ,bg-dark))))
+    `(mode-line-inactive ((,c :foreground ,fg-dark :background ,bg-dark :box ,bg-dark)))
     `(mode-line-emphasis ((,c :inherit bold :foreground ,blue)))
     `(mode-line-highlight ((,c :foreground ,fg :background ,bg-hl :box ,fg)))
     `(header-line ((,c :inherit mode-line)))
