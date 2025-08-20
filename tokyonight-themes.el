@@ -25,7 +25,7 @@
     `(match ((,c :foreground ,blue :background ,bg :inverse-video t)))
     `(shadow ((,c :foreground ,fg-dark)))
     `(minibuffer-prompt ((,c :foreground ,purple :background unspecified)))
-    `(region ((,c :background ,fg-gutter :foreground ,fg :extend t)))
+    `(region ((,c :background ,terminal-black :foreground ,fg :extend t)))
     `(secondary-selection ((,c :background ,bg-hl :foreground unspecified)))
     `(trailing-whitespace ((,c :foreground ,fg :background ,red1)))
     `(border ((,c :background ,dark3 :foreground ,fg)))
