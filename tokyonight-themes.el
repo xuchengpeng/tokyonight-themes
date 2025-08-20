@@ -324,7 +324,7 @@
     ;; orderless
     `(orderless-match-face-0 ((,c :foreground ,blue)))
     `(orderless-match-face-1 ((,c :foreground ,purple)))
-    `(orderless-match-face-2 ((,c :foreground ,cyan)))
+    `(orderless-match-face-2 ((,c :foreground ,teal)))
     `(orderless-match-face-3 ((,c :foreground ,red1)))
 
     ;; org
