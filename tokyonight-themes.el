@@ -331,7 +331,7 @@
     `(org-agenda-calendar-daterange ((,c :foreground ,fg-dark)))
     `(org-agenda-calendar-event ((,c :foreground ,fg-dark)))
     `(org-agenda-calendar-sexp ((,c :inherit (bold org-agenda-calendar-event))))
-    `(org-agenda-clocking ((,c :inherit bold :background ,yellow :foreground ,fg)))
+    `(org-agenda-clocking ((,c :inherit secondary-selection)))
     `(org-agenda-column-dateline ((,c :background ,bg-dark)))
     `(org-agenda-current-time ((,c :foreground ,fg)))
     `(org-agenda-date ((,c :foreground ,cyan)))
@@ -368,7 +368,7 @@
     `(org-document-title ((,c :foreground ,cyan)))
     `(org-done ((,c :foreground ,green)))
     `(org-drawer ((,c :foreground ,fg-dark)))
-    `(org-ellipsis (( ))) ; inherits from the heading's color
+    `(org-ellipsis ((,c :foreground ,comment)))
     `(org-footnote ((,c :inherit link)))
     `(org-formula ((,c :foreground ,magenta)))
     `(org-headline-done ((,c :inherit org-done)))
