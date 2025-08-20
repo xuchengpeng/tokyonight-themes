@@ -8,18 +8,13 @@ The theme templates adapt from [modus-themes](https://github.com/protesilaos/mod
 
 ## Install
 
-1. Clone the source:
-
-```bash
-git clone https://github.com/xuchengpeng/tokyonight-themes.git ~/.emacs.d/tokyonight-themes
-```
-
-2. Load the theme in your configuration:
+Load the theme in your configuration:
 
 ```elisp
-(add-to-list 'load-path "~/.emacs.d/tokyonight-themes")
-(require 'tokyonight-themes)
-(load-theme 'tokyonight-moon :no-confirm)  ; Or tokyonight-day, tokyonight-storm, tokyonight-night
+(use-package tokyonight-themes
+  :vc (:url "https://github.com/xuchengpeng/modus-themes")
+  :config
+  (load-theme 'tokyonight-moon :no-confirm))
 ```
 
 ## Customize
