@@ -437,9 +437,9 @@
     `(sh-quoted-exec ((,c :inherit font-lock-builtin-face)))
 
     ;; show-paren-mode
-    `(show-paren-match ((,c :background ,blue :foreground ,bg)))
-    `(show-paren-match-expression ((,c :background ,magenta :foreground ,bg)))
-    `(show-paren-mismatch ((,c :background ,red :foreground ,bg)))
+    `(show-paren-match ((,c :background ,blue0 :foreground ,fg)))
+    `(show-paren-match-expression ((,c :background ,magenta2 :foreground ,fg)))
+    `(show-paren-mismatch ((,c :background ,red1 :foreground ,fg)))
 
     ;; speedbar
     `(speedbar-button-face ((,c :inherit button)))
