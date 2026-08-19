@@ -20,7 +20,7 @@
     `(scroll-bar ((,c :background ,bg-dark :foreground ,fg-dark)))
     `(tool-bar ((,c :background ,bg-dark :foreground ,fg)))
     `(button ((,c :background unspecified :foreground ,blue1 :underline ,blue1)))
-    `(link ((,c :inherit button)))
+    `(link ((,c :background unspecified :foreground ,blue1 :underline ,blue1)))
     `(link-visited ((,c :background ,bg :foreground ,purple :underline ,purple)))
     `(match ((,c :foreground ,blue :background ,bg :inverse-video t)))
     `(shadow ((,c :foreground ,fg-dark)))
@@ -523,7 +523,7 @@
   '(
     ;;;; ansi-colors
     `(ansi-color-names-vector [,bg ,red ,green ,yellow ,blue ,magenta ,cyan ,fg])
-  )
+    )
   "Custom variables for `tokyonight-themes-theme'.")
 
 ;;; Theme macros
