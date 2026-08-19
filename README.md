@@ -6,16 +6,42 @@ Tokyo Night theme was firstly published as a plugin for Visual Studio Code, now 
 
 The theme templates adapt from [modus-themes](https://github.com/protesilaos/modus-themes), and the color palettes adapt from [tokyonight.nvim](https://github.com/folke/tokyonight.nvim), these two themes are very popular and awesome with GNU Emacs or [Neovim](https://github.com/neovim/neovim).
 
+## Install
+
 Load the theme in your configuration:
 
-``` elisp
-(use-package modus-themes
-  :ensure t)
+```elisp
 (use-package tokyonight-themes
-  :load-path "d:/github/tokyonight-themes/"
+  :vc (:url "https://github.com/xuchengpeng/tokyonight-themes")
   :config
-  (tokyonight-themes-take-over-modus-themes-mode 1)
-  (modus-themes-load-theme 'tokyonight-moon)
-  (setq modus-themes-to-toggle '(tokyonight-moon tokyonight-day))
-  (keymap-global-set "<f5>" #'modus-themes-toggle))
+  (load-theme 'tokyonight-moon :no-confirm))
 ```
+
+## Customize
+
+This theme has four color palettes, as same sa tokyonight.nvim. I have add support with some popular packages which I often use with GNU Emacs, like Corfu, vertico, orderless, dired, diff-hl, hl-todo, multiple-cursors, symbol-overlay, vundo and so on.
+
+If you like it, clone the theme, and add support for your plugins into the theme code. Also, you can use theme colors in code with `tokyonight-themes-with-colors`.
+
+For example, add support for git-gutter-fr package.
+
+```elisp
+(tokyonight-themes-with-colors
+  (custom-set-faces
+    `(git-gutter-fr:added ((,c :foreground ,green)))
+    `(git-gutter-fr:deleted ((,c :foreground ,red)))
+    `(git-gutter-fr:modified ((,c :foreground ,yellow)))))
+```
+
+Evaluate the code with a function after loading tokyonight-themes.
+
+If you want to change the color palettes, we have a option for palette overrides. Customize `tokyonight-<style>-palette-overrides` before you load the tokyonight-themes, style is an choice with `storm`, `moon`, `night` or `day`.
+
+For example, change the blue and cyan color for tokyonight-day-theme.
+
+```elisp
+(setq tokyonight-day-palette-overrides
+      '((blue . "#2e7de9")
+        (cyan . "#007197")))
+```
+
