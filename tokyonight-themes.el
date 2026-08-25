@@ -412,6 +412,9 @@
     `(org-verse ((,c :inherit org-block)))
     `(org-warning ((,c :inherit warning)))
 
+    ;; pulse
+    `(pulse-highlight-start-face ((,c :background ,blue0 :extend t)))
+
     ;; regexp-builder
     `(reb-match-0 ((,c :foreground ,blue1 :background ,bg :inverse-video t)))
     `(reb-match-1 ((,c :foreground ,green1 :background ,bg :inverse-video t)))
