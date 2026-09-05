@@ -274,6 +274,7 @@
               `(elisp-non-local-exit ((t :foreground ,yellow)))
               '(elisp-oclosure (( )))
               '(elisp-shadowing-variable (( )))
+              `(elisp-shorthand-font-lock-face ((t :foreground ,teal)))
               '(elisp-special-variable-declaration (( )))
               `(elisp-symbol-at-mouse ((t :background ,bg-dark :foreground ,fg)))
               '(elisp-symbol-role (( )))
