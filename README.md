@@ -14,7 +14,8 @@ Load the theme in your configuration:
 (use-package tokyonight-themes
   :vc (:url "https://github.com/xuchengpeng/tokyonight-themes")
   :config
-  (load-theme 'tokyonight-moon :no-confirm))
+  (tokyonight-themes-load-theme 'tokyonight-moon)
+  (keymap-global-set "<f5>" #'tokyonight-themes-toggle))
 ```
 
 ## Customize
@@ -28,20 +29,9 @@ For example, add support for git-gutter-fr package.
 ```elisp
 (tokyonight-themes-with-colors
   (custom-set-faces
-    `(git-gutter-fr:added ((,c :foreground ,green)))
-    `(git-gutter-fr:deleted ((,c :foreground ,red)))
-    `(git-gutter-fr:modified ((,c :foreground ,yellow)))))
+    `(git-gutter-fr:added ((t :foreground ,green)))
+    `(git-gutter-fr:deleted ((t :foreground ,red)))
+    `(git-gutter-fr:modified ((t :foreground ,yellow)))))
 ```
 
 Evaluate the code with a function after loading tokyonight-themes.
-
-If you want to change the color palettes, we have a option for palette overrides. Customize `tokyonight-<style>-palette-overrides` before you load the tokyonight-themes, style is an choice with `storm`, `moon`, `night` or `day`.
-
-For example, change the blue and cyan color for tokyonight-day-theme.
-
-```elisp
-(setq tokyonight-day-palette-overrides
-      '((blue . "#2e7de9")
-        (cyan . "#007197")))
-```
-
