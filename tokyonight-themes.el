@@ -61,7 +61,7 @@
               `(link-visited ((t :background ,bg :foreground ,purple :underline ,purple)))
               `(match ((t :background ,bg :foreground ,blue :inverse-video t)))
               `(shadow ((t :foreground ,fg-dark)))
-              `(minibuffer-prompt ((t :foreground ,purple :background unspecified)))
+              `(minibuffer-prompt ((t :foreground ,cyan :background unspecified)))
               `(region ((t :background ,terminal-black :foreground ,fg :extend t)))
               `(secondary-selection ((t :background ,bg-hl :foreground unspecified)))
               `(trailing-whitespace ((t :foreground ,fg :background ,red1)))
