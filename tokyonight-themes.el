@@ -216,13 +216,13 @@
               `(diff-hl-reverted-hunk-highlight ((t :foreground ,bg :background ,fg)))
 
               ;; dired
-              `(dired-broken-symlink ((t :inherit button :foreground ,red1)))
+              `(dired-broken-symlink ((t :foreground ,red1 :underline t)))
               `(dired-directory ((t :foreground ,blue)))
-              `(dired-flagged ((t :inherit bold :foreground ,cyan :inverse-video t)))
+              `(dired-flagged ((t :inherit bold :foreground ,blue2 :inverse-video t)))
               '(dired-header ((t :inherit bold)))
               '(dired-ignored ((t :inherit shadow)))
               '(dired-mark ((t :inherit bold)))
-              `(dired-marked ((t :inherit bold :foreground ,cyan :inverse-video t)))
+              `(dired-marked ((t :inherit bold :foreground ,blue2 :inverse-video t)))
               '(dired-perm-write ((t :inherit shadow)))
               `(dired-symlink ((t :foreground ,cyan :background ,bg :underline ,cyan)))
               '(dired-warning ((t :inherit warning)))
