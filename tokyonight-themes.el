@@ -537,9 +537,9 @@
               '(sh-quoted-exec ((t :inherit font-lock-builtin-face)))
 
               ;; show-paren-mode
-              `(show-paren-match ((t :background ,blue2 :foreground ,fg-gutter)))
-              `(show-paren-match-expression ((t :background ,purple :foreground ,fg-gutter)))
-              `(show-paren-mismatch ((t :background ,red1 :foreground ,fg-gutter)))
+              `(show-paren-match ((t :background ,terminal-black :foreground ,cyan :weight bold)))
+              `(show-paren-match-expression ((t :background ,bg-hl)))
+              `(show-paren-mismatch ((t :background ,bg-hl :foreground ,red :weight bold)))
 
               ;; speedbar
               '(speedbar-button-face ((t :inherit button)))
