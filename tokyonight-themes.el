@@ -59,7 +59,7 @@
               `(button ((t :background unspecified :foreground ,blue1 :underline ,blue1)))
               `(link ((t :background unspecified :foreground ,blue1 :underline ,blue1)))
               `(link-visited ((t :background ,bg :foreground ,purple :underline ,purple)))
-              `(match ((t :background ,blue :foreground ,fg-gutter)))
+              `(match ((t :background ,bg :foreground ,blue :inverse-video t)))
               `(shadow ((t :foreground ,fg-dark)))
               `(minibuffer-prompt ((t :foreground ,purple :background unspecified)))
               `(region ((t :background ,terminal-black :foreground ,fg :extend t)))
