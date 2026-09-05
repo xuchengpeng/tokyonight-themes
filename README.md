@@ -4,7 +4,7 @@
 
 Tokyo Night theme was firstly published as a plugin for Visual Studio Code, now it has many [other ports](https://github.com/tokyo-night/tokyo-night-vscode-theme#other-ports).
 
-The theme templates adapt from [modus-themes](https://github.com/protesilaos/modus-themes), and the color palettes adapt from [tokyonight.nvim](https://github.com/folke/tokyonight.nvim), these two themes are very popular and awesome with GNU Emacs or [Neovim](https://github.com/neovim/neovim).
+The  color palettes adapt from [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) which has four styles(day, night, storm, moon).
 
 ## Install
 
