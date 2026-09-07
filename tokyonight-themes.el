@@ -139,7 +139,7 @@
               `(avy-lead-face-2 ((t :background ,teal :foreground ,bg :weight bold)))
 
               ;; bookmark
-              '(bookmark-face ((t :inherit success)))
+              `(bookmark-face ((t :foreground ,yellow)))
               '(bookmark-menu-bookmark ((t :inherit bold)))
 
               ;; calendar and diary
