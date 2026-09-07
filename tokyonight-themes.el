@@ -161,10 +161,12 @@
               `(compilation-column-number ((t :foreground ,dark5)))
 
               ;; completions
-              `(completions-annotations ((t :foreground ,green2 :background unspecified :slant italic)))
-              `(completions-common-part ((t :foreground ,blue1 :background unspecified)))
-              `(completions-first-difference ((t :foreground ,purple :background unspecified :weight bold)))
-              `(completions-highlight ((t :background ,bg-hl :weight bold)))
+              `(completions-annotations ((t :foreground ,comment)))
+              `(completions-common-part ((t :foreground ,blue :weight bold)))
+              `(completions-first-difference ((t :foreground ,orange)))
+              `(completions-highlight ((t :background ,bg-hl)))
+              `(completions-group-title ((t :foreground ,magenta :weight bold :slant italic)))
+              `(completions-group-separator ((t :foreground ,comment :strike-through t)))
 
               ;; corfu
               `(corfu-default ((t :foreground ,fg :background ,bg-dark)))
