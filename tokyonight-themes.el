@@ -59,7 +59,6 @@
               `(button ((t :background unspecified :foreground ,blue1 :underline ,blue1)))
               `(link ((t :background unspecified :foreground ,blue1 :underline ,blue1)))
               `(link-visited ((t :background ,bg :foreground ,purple :underline ,purple)))
-              `(match ((t :background ,bg :foreground ,blue :inverse-video t)))
               `(shadow ((t :foreground ,fg-dark)))
               `(minibuffer-prompt ((t :foreground ,cyan :background unspecified)))
               `(region ((t :background ,terminal-black :foreground ,fg :extend t)))
@@ -356,11 +355,13 @@
               `(ido-virtual ((t :foreground ,purple)))
 
               ;; isearch
-              `(isearch ((t :foreground ,fg-gutter :background ,yellow)))
+              `(isearch ((t :foreground ,bg :background ,magenta2 :weight bold)))
               `(isearch-fail ((t :foreground ,fg-gutter :background ,red)))
-              `(isearch-group-1 ((t :foreground ,fg-gutter :background ,blue1)))
-              `(isearch-group-2 ((t :foreground ,fg-gutter :background ,green1)))
-              `(lazy-highlight ((t :foreground ,fg-gutter :background ,cyan)))
+              `(isearch-group-1 ((t :foreground ,bg :background ,blue)))
+              `(isearch-group-2 ((t :foreground ,bg :background ,teal)))
+              `(lazy-highlight ((t :foreground ,fg :background ,dark3)))
+              `(match ((t :foreground ,fg :background ,dark3)))
+              `(query-replace ((t :foreground ,bg :background ,orange :weight bold)))
 
               ;; line-number
               `(line-number ((t :background ,bg :foreground ,fg-gutter)))
