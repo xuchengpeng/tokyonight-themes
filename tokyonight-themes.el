@@ -583,16 +583,16 @@
               `(which-key-docstring-face ((t :foreground ,comment :slant italic)))
 
               ;; whitespace-mode
-              `(whitespace-big-indent ((t :background ,red1)))
-              '(whitespace-empty ((t :background unspecified)))
-              `(whitespace-hspace ((t :background unspecified :foreground ,fg-dark)))
-              `(whitespace-indentation ((t :background unspecified :foreground ,fg-dark)))
-              `(whitespace-line ((t :background unspecified :foreground ,orange)))
-              `(whitespace-newline ((t :background unspecified :foreground ,fg-dark)))
-              `(whitespace-space ((t :background unspecified :foreground ,fg-dark)))
-              '(whitespace-space-after-tab ((t :inherit warning :background unspecified)))
-              '(whitespace-space-before-tab ((t :inherit warning :background unspecified)))
-              `(whitespace-tab ((t :background unspecified :foreground ,fg-dark)))
+              `(whitespace-big-indent ((t :background ,bg-hl :foreground ,orange)))
+              `(whitespace-empty ((t :background ,red1 :extend t)))
+              `(whitespace-hspace ((t  :foreground ,fg-gutter)))
+              `(whitespace-indentation ((t :foreground ,fg-gutter)))
+              `(whitespace-line ((t :background ,bg-hl :foreground ,red)))
+              `(whitespace-newline ((t :foreground ,fg-gutter)))
+              `(whitespace-space ((t :foreground ,fg-gutter)))
+              `(whitespace-space-after-tab ((t :foreground ,fg-gutter)))
+              `(whitespace-space-before-tab ((t :foreground ,orange)))
+              `(whitespace-tab ((t :foreground ,fg-gutter)))
               `(whitespace-trailing ((t :background ,red1)))
 
               ;; widget
