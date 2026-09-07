@@ -560,10 +560,13 @@
               `(vertico-current ((t :background ,bg-hl :weight bold)))
 
               ;; vundo
-              '(vundo-default ((t :inherit shadow)))
-              `(vundo-highlight ((t :inherit (bold vundo-node) :foreground ,red)))
-              `(vundo-last-saved ((t :inherit (bold vundo-node) :foreground ,blue)))
-              `(vundo-saved ((t :inherit vundo-mode :foreground ,blue5)))
+              `(vundo-default ((t :foreground ,dark5)))
+              `(vundo-node ((t :foreground ,dark5)))
+              `(vundo-stem ((t :foreground ,fg-gutter)))
+              `(vundo-branch-stem ((t :foreground ,dark3)))
+              `(vundo-highlight ((t :foreground ,blue :weight bold)))
+              `(vundo-last-saved ((t :foreground ,green :weight bold)))
+              `(vundo-saved ((t :foreground ,green)))
 
               ;; which-func-mode
               `(which-func ((t :inherit bold :foreground ,blue)))
