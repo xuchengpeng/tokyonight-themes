@@ -106,22 +106,22 @@
               `(font-lock-warning-face ((t :foreground ,yellow)))
 
               ;; ansi-color
-              `(ansi-color-black ((t :background "black" :foreground "black")))
+              `(ansi-color-black ((t :background ,fg-gutter :foreground ,fg-gutter)))
               `(ansi-color-blue ((t :background ,blue :foreground ,blue)))
               '(ansi-color-bold ((t :inherit bold)))
               `(ansi-color-cyan ((t :background ,cyan :foreground ,cyan)))
-              `(ansi-color-green ((t :background ,green :foreground ,green)))
-              `(ansi-color-magenta ((t :background ,purple :foreground ,purple)))
-              `(ansi-color-red ((t :background ,red1 :foreground ,red1)))
-              `(ansi-color-white ((t :background "gray65" :foreground "gray65")))
-              `(ansi-color-yellow ((t :background ,orange :foreground ,orange)))
-              `(ansi-color-bright-black ((t :background "gray35" :foreground "gray35")))
-              `(ansi-color-bright-blue ((t :background ,blue1 :foreground ,blue1)))
-              `(ansi-color-bright-cyan ((t :background ,blue6 :foreground ,blue6)))
-              `(ansi-color-bright-green ((t :background ,green1 :foreground ,green1)))
+              `(ansi-color-green ((t :background ,teal :foreground ,teal)))
+              `(ansi-color-magenta ((t :background ,magenta :foreground ,magenta)))
+              `(ansi-color-red ((t :background ,red :foreground ,red)))
+              `(ansi-color-white ((t :background ,fg-dark :foreground ,fg-dark)))
+              `(ansi-color-yellow ((t :background ,yellow :foreground ,yellow)))
+              `(ansi-color-bright-black ((t :background ,terminal-black :foreground ,terminal-black)))
+              `(ansi-color-bright-blue ((t :background ,blue :foreground ,blue)))
+              `(ansi-color-bright-cyan ((t :background ,cyan :foreground ,cyan)))
+              `(ansi-color-bright-green ((t :background ,teal :foreground ,teal)))
               `(ansi-color-bright-magenta ((t :background ,magenta :foreground ,magenta)))
               `(ansi-color-bright-red ((t :background ,red :foreground ,red)))
-              `(ansi-color-bright-white ((t :background "white" :foreground "white")))
+              `(ansi-color-bright-white ((t :background ,fg-dark :foreground ,fg-dark)))
               `(ansi-color-bright-yellow ((t :background ,yellow :foreground ,yellow)))
 
               ;; ace-window
@@ -600,8 +600,7 @@
               `(window-divider-last-pixel ((t :foreground ,dark3))))
              (custom-theme-set-variables
               ',name
-              ;;;; ansi-colors
-              `(ansi-color-names-vector [,bg ,red ,green ,yellow ,blue ,magenta ,cyan ,fg])
+              `(ansi-color-names-vector [,fg-gutter ,red ,teal ,yellow ,blue ,magenta ,cyan ,fg-dark])
               '(diff-font-lock-syntax nil)
               '(frame-background-mode ',background-mode))
              ,@(unless theme-exists-p
