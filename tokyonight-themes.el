@@ -406,10 +406,10 @@
               '(mc/region-face ((t :inherit region)))
 
               ;; orderless
-              `(orderless-match-face-0 ((t :foreground ,blue)))
-              `(orderless-match-face-1 ((t :foreground ,purple)))
-              `(orderless-match-face-2 ((t :foreground ,teal)))
-              `(orderless-match-face-3 ((t :foreground ,red1)))
+              `(orderless-match-face-0 ((t :foreground ,blue :weight bold)))
+              `(orderless-match-face-1 ((t :foreground ,magenta :weight bold)))
+              `(orderless-match-face-2 ((t :foreground ,teal :weight bold)))
+              `(orderless-match-face-3 ((t :foreground ,orange :weight bold)))
 
               ;; org
               `(org-agenda-calendar-daterange ((t :foreground ,fg-dark)))
