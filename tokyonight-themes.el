@@ -569,17 +569,18 @@
               `(vundo-saved ((t :foreground ,green)))
 
               ;; which-func-mode
-              `(which-func ((t :inherit bold :foreground ,blue)))
+              `(which-func ((t :foreground ,blue)))
 
               ;; which-key
               `(which-key-command-description-face ((t :foreground ,fg)))
-              `(which-key-group-description-face ((t :foreground ,purple)))
-              `(which-key-highlighted-command-face ((t :inherit warning :underline t)))
-              `(which-key-key-face ((t :inherit bold :foreground ,blue)))
-              `(which-key-local-map-description-face ((t :foreground ,fg)))
-              '(which-key-note-face ((t :inherit shadow)))
-              '(which-key-separator-face ((t :inherit shadow)))
-              '(which-key-special-key-face ((t :inherit error)))
+              `(which-key-group-description-face ((t :foreground ,magenta)))
+              `(which-key-highlighted-command-face ((t :foreground ,orange :weight bold)))
+              `(which-key-key-face ((t :foreground ,blue :weight bold)))
+              `(which-key-local-map-description-face ((t :foreground ,teal)))
+              `(which-key-note-face ((t :foreground ,comment)))
+              `(which-key-separator-face ((t :foreground ,comment)))
+              `(which-key-special-key-face ((t :foreground ,red :weight bold)))
+              `(which-key-docstring-face ((t :foreground ,comment :slant italic)))
 
               ;; whitespace-mode
               `(whitespace-big-indent ((t :background ,red1)))
