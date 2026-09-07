@@ -171,8 +171,11 @@
               ;; corfu
               `(corfu-default ((t :foreground ,fg :background ,bg-dark)))
               `(corfu-current ((t :foreground ,fg :background ,bg-hl :weight bold)))
-              `(corfu-bar ((t :background ,fg-dark)))
-              `(corfu-border ((t :background ,dark3)))
+              `(corfu-bar ((t :background ,dark3)))
+              `(corfu-border ((t :background ,fg-gutter)))
+              `(corfu-annotations ((t :foreground ,comment)))
+              `(corfu-deprecated ((t :foreground ,comment :strike-through t)))
+              `(corfu-popupinfo ((t :foreground ,fg :background ,bg-dark)))
 
               ;; custom (M-x customize)
               `(custom-button ((t :background ,bg-dark :foreground ,fg-dark :box(:line-width 1 :color ,fg-dark :style released-button))))
