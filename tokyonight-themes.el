@@ -221,16 +221,16 @@
               `(diff-hl-reverted-hunk-highlight ((t :foreground ,bg :background ,fg)))
 
               ;; dired
-              `(dired-broken-symlink ((t :foreground ,red1 :underline t)))
-              `(dired-directory ((t :foreground ,blue)))
-              `(dired-flagged ((t :inherit bold :foreground ,blue2 :inverse-video t)))
-              '(dired-header ((t :inherit bold)))
-              '(dired-ignored ((t :inherit shadow)))
-              '(dired-mark ((t :inherit bold)))
-              `(dired-marked ((t :inherit bold :foreground ,blue2 :inverse-video t)))
-              '(dired-perm-write ((t :inherit shadow)))
-              `(dired-symlink ((t :foreground ,cyan :background ,bg :underline ,cyan)))
-              '(dired-warning ((t :inherit warning)))
+              `(dired-directory ((t :foreground ,blue :weight bold)))
+              `(dired-flagged ((t :foreground ,red)))
+              `(dired-header ((t :foreground ,magenta :weight bold)))
+              `(dired-ignored ((t :foreground ,comment)))
+              `(dired-mark ((t :foreground ,orange :weight bold)))
+              `(dired-marked ((t :foreground ,magenta :weight bold)))
+              `(dired-perm-write ((t :foreground ,fg-dark)))
+              `(dired-symlink ((t :foreground ,cyan)))
+              `(dired-warning ((t :foreground ,yellow :weight bold)))
+              `(dired-broken-symlink ((t :foreground ,red :weight bold)))
 
               ;; eglot
               `(eglot-highlight-symbol-face ((t :underline ,dark3)))
