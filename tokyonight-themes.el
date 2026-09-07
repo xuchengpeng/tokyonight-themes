@@ -510,9 +510,9 @@
               ;; ruler-mode
               '(ruler-mode-column-number ((t :inherit ruler-mode-default)))
               `(ruler-mode-comment-column ((t :inherit ruler-mode-default :foreground ,red)))
-              `(ruler-mode-current-column ((t :inherit ruler-mode-default :background ,bg-dark :foreground ,fg)))
-              `(ruler-mode-default ((t :inherit default :background ,bg-dark :foreground ,fg-dark)))
-              `(ruler-mode-fill-column ((t :inherit ruler-mode-default :foreground ,green)))
+              `(ruler-mode-current-column ((t :inherit ruler-mode-default :foreground ,fg :weight bold)))
+              `(ruler-mode-default ((t :background ,bg-dark :foreground ,fg-dark)))
+              `(ruler-mode-fill-column ((t :inherit ruler-mode-default :foreground ,red)))
               `(ruler-mode-fringes ((t :inherit ruler-mode-default :foreground ,cyan)))
               `(ruler-mode-goal-column ((t :inherit ruler-mode-default :foreground ,blue)))
               `(ruler-mode-margins ((t :inherit ruler-mode-default :foreground ,dark3)))
