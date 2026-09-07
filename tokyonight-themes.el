@@ -206,13 +206,13 @@
               '(diff-refine-changed ((t :inherit diff-changed :inverse-video t)))
               '(diff-refine-removed ((t :inherit diff-removed :inverse-video t)))
               '(diff-context (()))
-              '(diff-error ((t :inherit error)))
-              '(diff-file-header ((t :inherit bold)))
-              `(diff-function ((t :background ,dark3)))
+              `(diff-error ((t :foreground ,red1 :weight bold)))
+              '(diff-file-header ((t :weight bold)))
+              `(diff-function ((t :background ,terminal-black)))
               '(diff-header (()))
-              `(diff-hunk-header ((t :inherit bold :background ,dark3)))
+              `(diff-hunk-header ((t :background ,terminal-black :weight bold)))
               '(diff-index ((t :slant italic)))
-              '(diff-nonexistent ((t :inherit bold)))
+              '(diff-nonexistent ((t :weight bold)))
 
               ;; diff-hl
               `(diff-hl-change ((t :foreground ,bg :background ,yellow)))
