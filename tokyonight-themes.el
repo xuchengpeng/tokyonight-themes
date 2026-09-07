@@ -604,9 +604,9 @@
               '(widget-single-line-field ((t :inherit widget-field)))
 
               ;; window-divider-mode
-              `(window-divider ((t :foreground ,fg-dark)))
-              `(window-divider-first-pixel ((t :foreground ,dark3)))
-              `(window-divider-last-pixel ((t :foreground ,dark3))))
+              `(window-divider ((t :foreground ,terminal-black)))
+              `(window-divider-first-pixel ((t :foreground ,terminal-black)))
+              `(window-divider-last-pixel ((t :foreground ,terminal-black))))
              (custom-theme-set-variables
               ',name
               `(ansi-color-names-vector [,fg-gutter ,red ,teal ,yellow ,blue ,magenta ,cyan ,fg-dark])
