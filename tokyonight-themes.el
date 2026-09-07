@@ -500,10 +500,10 @@
               `(pulse-highlight-start-face ((t :background ,blue0 :extend t)))
 
               ;; regexp-builder
-              `(reb-match-0 ((t :foreground ,blue1 :background ,bg :inverse-video t)))
-              `(reb-match-1 ((t :foreground ,green1 :background ,bg :inverse-video t)))
-              `(reb-match-2 ((t :foreground ,red1 :background ,bg :inverse-video t)))
-              `(reb-match-3 ((t :foreground ,magenta2 :background ,bg :inverse-video t)))
+              `(reb-match-0 ((t :foreground ,blue :background ,bg :inverse-video t)))
+              `(reb-match-1 ((t :foreground ,teal :background ,bg :inverse-video t)))
+              `(reb-match-2 ((t :foreground ,magenta :background ,bg :inverse-video t)))
+              `(reb-match-3 ((t :foreground ,orange :background ,bg :inverse-video t)))
               '(reb-regexp-grouping-backslash ((t :inherit font-lock-regexp-grouping-backslash)))
               '(reb-regexp-grouping-construct ((t :inherit font-lock-regexp-grouping-construct)))
 
