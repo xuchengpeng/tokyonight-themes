@@ -71,7 +71,7 @@
               `(highlight ((t :background ,bg-hl :foreground ,fg)))
               `(error ((t :foreground ,red1 :weight bold)))
               `(warning ((t :foreground ,yellow :weight bold)))
-              `(success ((t :foreground ,cyan :weight bold)))
+              `(success ((t :foreground ,green1 :weight bold)))
               `(help-argument-name ((t :foreground ,yellow :slant italic)))
               `(help-key-binding ((t :foreground ,blue :weight bold)))
 
