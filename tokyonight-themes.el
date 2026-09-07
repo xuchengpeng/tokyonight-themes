@@ -360,7 +360,7 @@
 
               ;; isearch
               `(isearch ((t :foreground ,bg :background ,magenta2 :weight bold)))
-              `(isearch-fail ((t :foreground ,fg-gutter :background ,red)))
+              `(isearch-fail ((t :foreground ,bg :background ,red)))
               `(isearch-group-1 ((t :foreground ,bg :background ,blue)))
               `(isearch-group-2 ((t :foreground ,bg :background ,teal)))
               `(lazy-highlight ((t :foreground ,fg :background ,dark3)))
