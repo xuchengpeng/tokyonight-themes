@@ -59,7 +59,7 @@
               `(button ((t :background unspecified :foreground ,blue1 :underline ,blue1)))
               `(link ((t :background unspecified :foreground ,blue1 :underline ,blue1)))
               `(link-visited ((t :background ,bg :foreground ,purple :underline ,purple)))
-              `(shadow ((t :foreground ,fg-dark)))
+              `(shadow ((t :foreground ,comment)))
               `(minibuffer-prompt ((t :foreground ,cyan :background unspecified)))
               `(region ((t :background ,dark3 :foreground ,fg :extend t)))
               `(secondary-selection ((t :background ,bg-hl :foreground unspecified)))
