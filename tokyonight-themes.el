@@ -538,23 +538,23 @@
               `(speedbar-tag-face ((t :foreground ,teal)))
 
               ;; tab-bar
-              `(tab-bar ((t :background ,bg-dark)))
-              `(tab-bar-tab ((t :inherit bold :foreground ,fg :background ,bg)))
-              `(tab-bar-tab-group-current ((t :inherit bold :foreground ,fg :background ,bg)))
-              `(tab-bar-tab-group-inactive ((t :foreground ,fg-dark :background ,bg-dark)))
-              '(tab-bar-tab-highlight ((t :inherit highlight)))
-              `(tab-bar-tab-inactive ((t :background ,terminal-black)))
-              '(tab-bar-tab-ungrouped ((t :inherit tab-bar-tab-inactive)))
+              `(tab-bar ((t :foreground ,fg-dark :background ,bg-dark1)))
+              `(tab-bar-tab ((t :foreground ,fg :background ,bg :weight bold)))
+              `(tab-bar-tab-group-current ((t :foreground ,blue :background ,bg :weight bold)))
+              `(tab-bar-tab-group-inactive ((t :foreground ,dark5 :background ,bg-dark)))
+              `(tab-bar-tab-highlight ((t :background ,bg-hl)))
+              `(tab-bar-tab-inactive ((t :foreground ,dark5 :background ,bg-dark)))
+              `(tab-bar-tab-ungrouped ((t :foreground ,comment :background ,bg-dark)))
 
               ;; tab-line
-              `(tab-line ((t :background ,bg-dark :height 0.95)))
+              `(tab-line ((t :foreground ,fg-dark :background ,bg-dark1 :height 0.95)))
               `(tab-line-close-highlight ((t :foreground ,red1)))
-              '(tab-line-highlight ((t :inherit highlight)))
-              '(tab-line-tab (( )))
-              `(tab-line-tab-current ((t :inherit bold :background ,bg)))
-              `(tab-line-tab-inactive ((t :background ,terminal-black)))
-              '(tab-line-tab-inactive-alternate ((t :inherit tab-line-tab-inactive)))
-              `(tab-line-tab-modified ((t :foreground ,orange)))
+              `(tab-line-highlight ((t :background ,bg-hl)))
+              `(tab-line-tab ((t :foreground ,fg :background ,bg :weight bold)))
+              `(tab-line-tab-current ((t :foreground ,fg :background ,bg :weight bold)))
+              `(tab-line-tab-inactive ((t :foreground ,dark5 :background ,bg-dark)))
+              `(tab-line-tab-inactive-alternate ((t :foreground ,dark5 :background ,bg-dark)))
+              `(tab-line-tab-modified ((t :foreground ,yellow)))
 
               ;; vertico
               `(vertico-current ((t :background ,bg-hl :weight bold)))
