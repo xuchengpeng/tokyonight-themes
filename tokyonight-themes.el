@@ -151,14 +151,14 @@
               `(diary ((t :foreground ,yellow)))
 
               ;; compilation
-              `(compilation-info ((t :inherit bold :foreground ,cyan)))
-              `(compilation-warning ((t :inherit bold :foreground ,yellow)))
-              `(compilation-error ((t :inherit bold :foreground ,red1)))
-              '(compilation-line-number ((t :inherit shadow)))
-              '(compilation-column-number ((t :inherit compilation-line-number)))
-              '(compilation-mode-line-exit ((t :inherit bold)))
-              `(compilation-mode-line-fail ((t :inherit bold :foreground ,red1)))
-              `(compilation-mode-line-run ((t :inherit bold :foreground ,yellow)))
+              `(compilation-error ((t :foreground ,red1 :weight bold)))
+              `(compilation-warning ((t :foreground ,yellow :weight bold)))
+              `(compilation-info ((t :foreground ,teal)))
+              `(compilation-mode-line-exit ((t :foreground ,green :weight bold)))
+              `(compilation-mode-line-fail ((t :foreground ,red :weight bold)))
+              `(compilation-mode-line-run ((t :foreground ,blue :weight bold)))
+              `(compilation-line-number ((t :foreground ,dark5)))
+              `(compilation-column-number ((t :foreground ,dark5)))
 
               ;; completions
               `(completions-annotations ((t :foreground ,green2 :background unspecified :slant italic)))
