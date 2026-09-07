@@ -520,8 +520,8 @@
               `(ruler-mode-tab-stop ((t :inherit ruler-mode-default :foreground ,yellow)))
 
               ;; shell
-              '(sh-heredoc ((t :inherit font-lock-string-face)))
-              '(sh-quoted-exec ((t :inherit font-lock-builtin-face)))
+              `(sh-heredoc ((t :foreground ,green :slant italic)))
+              `(sh-quoted-exec ((t :foreground ,orange)))
 
               ;; show-paren-mode
               `(show-paren-match ((t :background ,terminal-black :foreground ,cyan :weight bold)))
@@ -529,13 +529,13 @@
               `(show-paren-mismatch ((t :background ,bg-hl :foreground ,red :weight bold)))
 
               ;; speedbar
-              '(speedbar-button-face ((t :inherit button)))
-              `(speedbar-directory-face ((t :inherit bold :foreground ,blue2)))
+              `(speedbar-button-face ((t :foreground ,green)))
+              `(speedbar-directory-face ((t :foreground ,blue :weight bold)))
               `(speedbar-file-face ((t :foreground ,fg)))
-              '(speedbar-highlight-face ((t :inherit highlight)))
-              `(speedbar-selected-face ((t :foreground ,cyan :weight bold :inverse-video t)))
-              `(speedbar-separator-face ((t :background ,dark3 :foreground ,fg)))
-              `(speedbar-tag-face ((t :foreground ,magenta2)))
+              `(speedbar-highlight-face ((t :background ,bg-hl)))
+              `(speedbar-selected-face ((t :foreground ,orange :weight bold)))
+              `(speedbar-separator-face ((t :background ,bg-dark :foreground ,comment)))
+              `(speedbar-tag-face ((t :foreground ,teal)))
 
               ;; tab-bar
               `(tab-bar ((t :background ,bg-dark)))
