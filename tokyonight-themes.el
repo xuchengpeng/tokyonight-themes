@@ -131,12 +131,12 @@
               `(aw-mode-line-face ((t :foreground ,blue :weight bold)))
 
               ;; avy
-              `(avy-background-face ((t :background ,bg-dark :foreground ,fg-dark :extend t)))
-              `(avy-goto-char-timer-face ((t :inherit bold :background ,bg-hl)))
-              `(avy-lead-face ((t :inherit bold :background ,blue :foreground ,bg)))
-              `(avy-lead-face-0 ((t :inherit bold :background ,magenta :foreground ,bg)))
-              `(avy-lead-face-1 ((t :background ,dark3)))
-              `(avy-lead-face-2 ((t :inherit bold :background ,yellow :foreground ,bg)))
+              `(avy-background-face ((t :foreground ,comment)))
+              `(avy-goto-char-timer-face ((t :background ,magenta2 :foreground ,bg)))
+              `(avy-lead-face ((t :background ,magenta2 :foreground ,bg :weight bold)))
+              `(avy-lead-face-0 ((t  :background ,blue :foreground ,bg :weight bold)))
+              `(avy-lead-face-1 ((t :background ,dark5 :foreground ,bg :weight bold)))
+              `(avy-lead-face-2 ((t :background ,teal :foreground ,bg :weight bold)))
 
               ;; bookmark
               '(bookmark-face ((t :inherit success)))
