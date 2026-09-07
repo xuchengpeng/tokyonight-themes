@@ -287,17 +287,18 @@
               '(elisp-widget-type (( )))
 
               ;; eshell
-              `(eshell-prompt ((t :foreground ,purple :weight bold)))
-              `(eshell-ls-archive ((t :foreground ,red1)))
-              '(eshell-ls-backup ((t :inherit font-lock-comment-face)))
-              '(eshell-ls-clutter ((t :inherit font-lock-comment-face)))
-              `(eshell-ls-directory ((t :foreground ,blue)))
+              `(eshell-prompt ((t :foreground ,blue :weight bold)))
+              `(eshell-ls-archive ((t :foreground ,magenta)))
+              `(eshell-ls-backup ((t :foreground ,comment)))
+              `(eshell-ls-clutter ((t :foreground ,comment)))
+              `(eshell-ls-directory ((t :foreground ,blue :weight bold)))
               `(eshell-ls-executable ((t :foreground ,green)))
-              '(eshell-ls-missing ((t :inherit font-lock-warning-face)))
-              '(eshell-ls-product ((t :inherit font-lock-doc-face)))
-              `(eshell-ls-special ((t :foreground ,yellow :weight bold)))
-              `(eshell-ls-symlink ((t :foreground ,cyan :weight bold)))
-              `(eshell-ls-unreadable ((t :foreground ,fg)))
+              `(eshell-ls-missing ((t :foreground ,red)))
+              `(eshell-ls-product ((t :foreground ,fg-dark)))
+              `(eshell-ls-readonly ((t :foreground ,dark5)))
+              `(eshell-ls-special ((t :foreground ,orange :weight bold)))
+              `(eshell-ls-symlink ((t :foreground ,cyan)))
+              `(eshell-ls-unreadable ((t :foreground ,comment)))
 
               ;; flymake
               `(flymake-error ((t :underline (:style wave :color ,red))))
