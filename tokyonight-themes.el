@@ -233,9 +233,11 @@
               `(dired-broken-symlink ((t :foreground ,red :weight bold)))
 
               ;; eglot
-              `(eglot-highlight-symbol-face ((t :underline ,dark3)))
+              `(eglot-highlight-symbol-face ((t :background ,bg-hl :weight bold)))
+              `(eglot-inlay-hint-face ((t :foreground ,dark5 :height 0.9)))
+              `(eglot-diagnostic-tag-unnecessary-face ((t :foreground ,comment :underline (:style wave :color ,dark5))))
+              `(eglot-diagnostic-tag-deprecated-face ((t :foreground ,comment :strike-through ,dark5)))
               `(eglot-mode-line ((t :foreground ,blue)))
-              `(eglot-diagnostic-tag-unnecessary-face ((t :underline (:style wave :color ,cyan))))
 
               ;; elfeed
               '(elfeed-log-date-face ((t :inherit elfeed-search-date-face)))
