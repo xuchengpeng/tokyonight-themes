@@ -347,16 +347,16 @@
               `(hl-line ((t :background ,bg-hl :extend t)))
 
               ;; icomplete
-              `(icomplete-first-match ((t :foreground ,blue1 :weight bold)))
-              `(icomplete-selected-match ((t :background ,bg-hl :weight bold)))
+              `(icomplete-first-match ((t :foreground ,green :weight bold)))
+              `(icomplete-selected-match ((t :background ,bg-hl)))
 
               ;; ido
-              `(ido-first-match ((t :foreground ,blue1 :weight bold)))
-              '(ido-incomplete-regexp ((t :inherit error :weight bold)))
-              '(ido-indicator ((t :inherit bold)))
-              '(ido-only-match ((t :inherit ido-first-match)))
-              `(ido-subdir ((t :foreground ,blue1)))
-              `(ido-virtual ((t :foreground ,purple)))
+              `(ido-first-match ((t :foreground ,green :weight bold)))
+              `(ido-only-match ((t :foreground ,teal :weight bold)))
+              `(ido-subdir ((t :foreground ,blue)))
+              `(ido-incomplete-regexp ((t :foreground ,red1)))
+              `(ido-indicator ((t :foreground ,bg :background ,red)))
+              `(ido-virtual ((t :foreground ,comment)))
 
               ;; isearch
               `(isearch ((t :foreground ,bg :background ,magenta2 :weight bold)))
