@@ -143,14 +143,12 @@
               '(bookmark-menu-bookmark ((t :inherit bold)))
 
               ;; calendar and diary
-              '(calendar-month-header ((t :inherit bold)))
-              '(calendar-today ((t :inherit bold :underline t)))
-              `(calendar-weekday-header ((t :foreground ,cyan)))
-              `(calendar-weekend-header ((t :foreground ,red1)))
-              `(diary ((t :foreground ,cyan)))
-              `(diary-anniversary ((t :foreground ,red1)))
-              `(diary-time ((t :foreground ,cyan)))
-              `(holiday ((t :foreground ,red1)))
+              `(calendar-today ((t :foreground ,blue :weight bold :underline t)))
+              `(calendar-weekend-header ((t :foreground ,red)))
+              `(calendar-weekday-header ((t :foreground ,teal)))
+              `(calendar-month-header ((t :foreground ,magenta :weight bold)))
+              `(holiday ((t :foreground ,orange)))
+              `(diary ((t :foreground ,yellow)))
 
               ;; compilation
               `(compilation-info ((t :inherit bold :foreground ,cyan)))
