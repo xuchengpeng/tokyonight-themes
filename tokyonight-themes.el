@@ -301,13 +301,13 @@
               `(eshell-ls-unreadable ((t :foreground ,comment)))
 
               ;; flymake
-              `(flymake-error ((t :underline (:style wave :color ,red))))
-              `(flymake-warning ((t :underline (:style wave :color ,orange))))
-              `(flymake-note ((t :underline (:style wave :color ,cyan))))
+              `(flymake-error ((t :underline (:style wave :color ,red1))))
+              `(flymake-warning ((t :underline (:style wave :color ,yellow))))
+              `(flymake-note ((t :underline (:style wave :color ,teal))))
 
               ;; flyspell
-              `(flyspell-duplicate ((t :underline (:style wave :color ,orange))))
-              `(flyspell-incorrect ((t :underline (:style wave :color ,red))))
+              `(flyspell-duplicate ((t :underline (:style wave :color ,yellow))))
+              `(flyspell-incorrect ((t :underline (:style wave :color ,red1))))
 
               ;; hi-lock (M-x highlight-regexp)
               '(hi-aquamarine ((((class color) (min-colors 88) (background light))
