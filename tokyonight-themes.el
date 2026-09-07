@@ -363,10 +363,10 @@
               `(lazy-highlight ((t :foreground ,fg-gutter :background ,cyan)))
 
               ;; line-number
-              `(line-number ((t :inherit default :foreground ,fg-dark)))
-              `(line-number-current-line ((t :inherit (bold line-number) :foreground ,fg)))
-              `(line-number-major-tick ((t :inherit line-number :foreground ,red)))
-              `(line-number-minor-tick ((t :inherit line-number :foreground ,fg-dark)))
+              `(line-number ((t :background ,bg :foreground ,fg-gutter)))
+              `(line-number-current-line ((t :background ,bg :foreground ,fg-dark :weight bold)))
+              `(line-number-major-tick ((t :background ,bg :foreground ,dark5)))
+              `(line-number-minor-tick ((t :background ,bg :foreground ,fg-gutter)))
 
               ;; message
               `(message-cited-text-1 ((t :foreground ,blue)))
