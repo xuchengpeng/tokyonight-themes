@@ -124,11 +124,11 @@
               `(ansi-color-bright-yellow ((t :background ,yellow :foreground ,yellow)))
 
               ;; ace-window
-              `(aw-background-face ((t :foreground "gray50")))
-              `(aw-key-face ((t :inherit bold :foreground ,blue)))
-              `(aw-leading-char-face ((t :inherit bold :height 1.5 :foreground ,red)))
-              '(aw-minibuffer-leading-char-face ((t :inherit aw-key-face)))
-              '(aw-mode-line-face ((t :inherit bold)))
+              `(aw-background-face ((t :foreground ,comment)))
+              `(aw-key-face ((t :foreground ,magenta2 :weight bold)))
+              `(aw-leading-char-face ((t :foreground ,magenta2 :weight bold :height 1.5)))
+              `(aw-minibuffer-leading-char-face ((t :foreground ,magenta2 :weight bold)))
+              `(aw-mode-line-face ((t :foreground ,blue :weight bold)))
 
               ;; avy
               `(avy-background-face ((t :background ,bg-dark :foreground ,fg-dark :extend t)))
