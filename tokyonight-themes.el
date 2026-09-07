@@ -390,10 +390,10 @@
 
               ;; mode-line / header-line
               `(mode-line ((t :foreground ,fg :background ,bg-dark1 :box ,bg-dark1)))
-              '(mode-line-buffer-id ((t :inherit bold)))
+              '(mode-line-buffer-id ((t :weight bold)))
               '(mode-line-active ((t :inherit mode-line)))
               `(mode-line-inactive ((t :foreground ,fg-dark :background ,bg-dark :box ,bg-dark)))
-              `(mode-line-emphasis ((t :foreground ,blue)))
+              '(mode-line-emphasis ((t :slant italic)))
               `(mode-line-highlight ((t :foreground ,fg :background ,bg-hl :box ,fg)))
               '(header-line ((t :inherit mode-line)))
               '(header-line-active ((t :inherit mode-line-active)))
