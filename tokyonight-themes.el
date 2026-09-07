@@ -232,6 +232,20 @@
               `(dired-warning ((t :foreground ,yellow :weight bold)))
               `(dired-broken-symlink ((t :foreground ,red :weight bold)))
 
+              ;; ediff
+              `(ediff-current-diff-A ((t (:foreground ,red :background ,bg-hl :extend t))))
+              `(ediff-current-diff-B ((t (:foreground ,green :background ,bg-hl :extend t))))
+              `(ediff-current-diff-C ((t (:foreground ,yellow :background ,bg-hl :extend t))))
+              `(ediff-fine-diff-A ((t (:inherit ediff-current-diff-A :inverse-video t))))
+              `(ediff-fine-diff-B ((t (:inherit ediff-current-diff-B :inverse-video t))))
+              `(ediff-fine-diff-C ((t (:inherit ediff-current-diff-C :inverse-video t))))
+              `(ediff-even-diff-A ((t (:background ,bg-hl :extend t))))
+              `(ediff-even-diff-B ((t (:background ,bg-hl :extend t))))
+              `(ediff-even-diff-C ((t (:background ,bg-hl :extend t))))
+              `(ediff-odd-diff-A ((t (:background ,bg-hl :extend t))))
+              `(ediff-odd-diff-B ((t (:background ,bg-hl :extend t))))
+              `(ediff-odd-diff-C ((t (:background ,bg-hl :extend t))))
+
               ;; eglot
               `(eglot-highlight-symbol-face ((t :background ,bg-hl :weight bold)))
               `(eglot-inlay-hint-face ((t :foreground ,dark5 :height 0.9)))
