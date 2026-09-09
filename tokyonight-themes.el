@@ -13,6 +13,7 @@
   "Specify two themes for the `tokyonight-themes-toggle' command."
   :group 'tokyonight-themes)
 
+;;;###autoload
 (defun tokyonight-themes-load-theme (theme)
   "Load THEME while disabling other themes and return THEME."
   (mapc #'disable-theme custom-enabled-themes)
@@ -60,7 +61,8 @@
               `(link ((t :foreground ,teal :underline t)))
               `(link-visited ((t :foreground ,magenta :underline t)))
               `(shadow ((t :foreground ,comment)))
-              `(minibuffer-prompt ((t :foreground ,cyan :background unspecified)))
+              `(minibuffer-prompt ((t :foreground ,cyan :weight bold)))
+              `(minibuffer-nonselected ((t :inverse-video t)))
               `(escape-glyph ((t :foreground ,blue5)))
               `(homoglyph ((t :foreground ,blue5)))
               `(region ((t :background ,dark3 :foreground ,fg :extend t)))
