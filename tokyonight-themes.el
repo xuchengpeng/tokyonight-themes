@@ -171,7 +171,7 @@
               `(compilation-column-number ((t :foreground ,dark5)))
 
               ;; completions
-              `(completions-annotations ((t :foreground ,comment)))
+              `(completions-annotations ((t :foreground ,comment :slant italic)))
               `(completions-common-part ((t :foreground ,blue :weight bold)))
               `(completions-first-difference ((t :foreground ,orange)))
               `(completions-highlight ((t :background ,bg-hl)))
