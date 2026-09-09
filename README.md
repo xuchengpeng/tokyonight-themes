@@ -20,18 +20,22 @@ Load the theme in your configuration:
 
 ## Customize
 
-This theme has four color palettes, as same sa tokyonight.nvim. I have add support with some popular packages which I often use with GNU Emacs, like Corfu, vertico, orderless, dired, diff-hl, hl-todo, multiple-cursors, symbol-overlay, vundo and so on.
+This theme has four color palettes, as same sa tokyonight.nvim. I have add support with some popular packages which I often use with GNU Emacs, like Corfu, vertico, orderless, dired, diff-hl, hl-todo, multiple-cursors, vundo and so on.
 
 If you like it, clone the theme, and add support for your plugins into the theme code. Also, you can use theme colors in code with `tokyonight-themes-with-colors`.
 
-For example, add support for git-gutter-fr package.
+For example, add support for echo-bar.
 
 ```elisp
-(tokyonight-themes-with-colors
-  (custom-set-faces
-    `(git-gutter-fr:added ((t :foreground ,green)))
-    `(git-gutter-fr:deleted ((t :foreground ,red)))
-    `(git-gutter-fr:modified ((t :foreground ,yellow)))))
+(defun +themes-custom-faces (&rest _)
+  (tokyonight-themes-with-colors
+    (custom-set-faces
+     `(echo-bar-red-face ((t :foreground ,red)))
+     `(echo-bar-green-face ((t :foreground ,green)))
+     `(echo-bar-yellow-face ((t :foreground ,yellow)))
+     `(echo-bar-blue-face ((t :foreground ,blue)))
+     `(echo-bar-magenta-face ((t :foreground ,magenta)))
+     `(echo-bar-cyan-face ((t :foreground ,cyan)))
+     `(echo-bar-gray-face ((t :foreground ,comment))))))
+(add-hook 'tokyonight-themes-after-load-theme-hook #'+themes-custom-faces)
 ```
-
-Evaluate the code with a function after loading tokyonight-themes.

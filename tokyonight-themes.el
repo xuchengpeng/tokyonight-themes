@@ -13,11 +13,17 @@
   "Specify two themes for the `tokyonight-themes-toggle' command."
   :group 'tokyonight-themes)
 
+(defcustom tokyonight-themes-after-load-theme-hook nil
+  "Hook that runs after loading a TokyoNight theme."
+  :type 'hook
+  :group 'tokyonight-themes)
+
 ;;;###autoload
 (defun tokyonight-themes-load-theme (theme)
   "Load THEME while disabling other themes and return THEME."
   (mapc #'disable-theme custom-enabled-themes)
   (load-theme theme :no-confirm)
+  (run-hooks 'tokyonight-themes-after-load-theme-hook)
   theme)
 
 ;;;###autoload
