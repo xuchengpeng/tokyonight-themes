@@ -231,16 +231,16 @@
               `(diff-hl-reverted-hunk-highlight ((t :foreground ,bg :background ,fg)))
 
               ;; dired
-              `(dired-directory ((t :foreground ,blue :weight bold)))
-              `(dired-flagged ((t :foreground ,red)))
+              `(dired-directory ((t :foreground ,blue)))
+              `(dired-flagged ((t :foreground ,red :weight bold)))
               `(dired-header ((t :foreground ,magenta :weight bold)))
               `(dired-ignored ((t :foreground ,comment)))
               `(dired-mark ((t :foreground ,orange :weight bold)))
               `(dired-marked ((t :foreground ,magenta :weight bold)))
               `(dired-perm-write ((t :foreground ,fg-dark)))
               `(dired-symlink ((t :foreground ,cyan)))
-              `(dired-warning ((t :foreground ,yellow :weight bold)))
-              `(dired-broken-symlink ((t :foreground ,red :weight bold)))
+              `(dired-warning ((t :foreground ,yellow)))
+              `(dired-broken-symlink ((t :foreground ,red)))
 
               ;; ediff
               `(ediff-current-diff-A ((t (:foreground ,red :background ,bg-hl :extend t))))
