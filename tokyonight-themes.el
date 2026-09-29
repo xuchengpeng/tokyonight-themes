@@ -382,6 +382,20 @@
               `(ido-indicator ((t :foreground ,bg :background ,red)))
               `(ido-virtual ((t :foreground ,comment)))
 
+              ;; info
+              `(Info-quoted ((t :foreground ,fg-dark)))
+              `(info-header-node ((t :foreground ,fg-dark :weight bold :slant italic)))
+              `(info-header-xref ((t :foreground ,blue)))
+              `(info-xref ((t :foreground ,teal)))
+              `(info-xref-visited ((t :foreground ,magenta)))
+              `(info-menu-header ((t :foreground ,green)))
+              `(info-menu-star ((t :foreground ,red)))
+              `(info-node ((t :foreground ,fg-dark :weight bold :slant italic)))
+              `(info-title-1 ((t :foreground ,blue5 :weight bold)))
+              `(info-title-2 ((t :foreground ,yellow :weight bold)))
+              `(info-title-3 ((t :foreground ,blue :weight bold)))
+              `(info-title-4 ((t :foreground ,magenta :weight bold)))
+
               ;; isearch
               `(isearch ((t :foreground ,bg :background ,magenta2 :weight bold)))
               `(isearch-fail ((t :foreground ,bg :background ,red)))
