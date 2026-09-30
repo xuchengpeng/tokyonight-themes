@@ -11,6 +11,7 @@
 
 (defcustom tokyonight-themes-to-toggle '(tokyonight-day tokyonight-moon)
   "Specify two themes for the `tokyonight-themes-toggle' command."
+  :type '(list symbol symbol)
   :group 'tokyonight-themes)
 
 (defcustom tokyonight-themes-after-load-theme-hook nil
